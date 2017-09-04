@@ -18,3 +18,13 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+
+/*-------flash讯息----*/
+.customed-flash {
+	opacity: 0.8;
+  	position: fixed;
+  	width: 100%;
+  	padding: 15px 20px 15px 20px;
+  	margin: 90px 0px 0px 0px; // 会将 flash 讯息往下移。
+}
