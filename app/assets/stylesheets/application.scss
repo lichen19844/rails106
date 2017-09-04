@@ -32,7 +32,7 @@
     position: fixed;
     width: 100%;
     padding: 15px 45px 15px 20px;
-    margin: 90px 0px 0px 0px; // 会将 flash 讯息往下移。
+    margin: 0px 0px 0px 0px; // 会将 flash 讯息往下移。
 }
 
 .alert {
@@ -40,11 +40,21 @@
   border-radius: 0;
 }
 
+.navbar-inverse {
+    background: linear-gradient(180deg,#212121,#0091EA);
+    opacity: 0.69;
+    border-color: #222222;
+    margin-bottom: 100px;
+    border-radius: 0;
+    height: 60px;
+}
+
 
 //---------Box---------
 .box {
 	//background: image_url('header.png')repeat scroll top center/ cover;
-	background-color: rgba(0, 120, 50, 0.69);
+	background: linear-gradient(180deg,#0091EA,#212121);
+	opacity: 0.6;
     //background-image: image-url("header.png");
     //background-repeat: no-repeat;
     //background-size: cover;
@@ -142,3 +152,6 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+
+
