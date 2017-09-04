@@ -18,7 +18,11 @@
 @import "bootstrap";
 
 
-
+ body {
+     background: url("https://ww3.sinaimg.cn/large/006tNc79gy1ff6zr9y4yoj31kw11v4bv.jpg")no-repeat scroll top center/cover;
+     background-attachment: fixed;
+     font-family: 'Open Sans', sans-serif;
+ }
 
 
 /*-------flash讯息----*/
@@ -39,13 +43,13 @@
 
 //---------Box---------
 .box {
-	background: image_url('header.png')repeat scroll top center/ cover;
-	//background-color: rgba(0, 120, 50, 0.69);
+	//background: image_url('header.png')repeat scroll top center/ cover;
+	background-color: rgba(0, 120, 50, 0.69);
     //background-image: image-url("header.png");
     //background-repeat: no-repeat;
     //background-size: cover;
     margin-bottom: 0px;
-    margin-top: 0px;
+    margin-top: 200px;
 
     .box-inner {
         background-color: rgba(250, 250, 250, 0.69);
