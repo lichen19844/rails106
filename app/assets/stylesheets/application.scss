@@ -40,6 +40,8 @@
   border-radius: 0;
 }
 
+//---------导航------------
+
 .navbar-inverse {
     background: linear-gradient(180deg,#212121,#0091EA);
     opacity: 0.69;
@@ -48,110 +50,5 @@
     border-radius: 0;
     height: 60px;
 }
-
-
-//---------Box---------
-.box {
-	//background: image_url('header.png')repeat scroll top center/ cover;
-	background: linear-gradient(180deg,#0091EA,#212121);
-	opacity: 0.6;
-    //background-image: image-url("header.png");
-    //background-repeat: no-repeat;
-    //background-size: cover;
-    margin-bottom: 0px;
-    margin-top: 200px;
-
-    .box-inner {
-        background-color: rgba(250, 250, 250, 0.69);
-        padding-bottom: 5px;
-        margin-top: 150px;
-        margin-bottom: 150px;
-    }
-
-    .title {
-        text-align: center;
-        margin-bottom: 80px;
-    }
-
-    .slogan {
-        color: #222;
-        margin-top: 10px;
-        margin-bottom: 50px;
-        text-align: center;
-        font-size: 25px;
-        top: 12px;
-    }
-
-    .lead {
-        margin-bottom: 60px;
-        text-align: center;
-        color: white;
-    }
-}
-
-//---------Box2---------
-.box2 {
-	background: image_url('DADO_Pattern_Blue.png')repeat scroll top center/ cover;
-    margin-bottom: 0px;
-    margin-top: 0px;
-
-    .box-inner {
-        background-color: rgba(250, 250, 250, 0.69);
-        padding-bottom: 5px;
-        margin-top: 150px;
-        margin-bottom: 150px;
-    }
-
-    .title {
-        text-align: center;
-        margin-bottom: 80px;
-    }
-
-    .slogan {
-        color: #222;
-        margin-top: 10px;
-        margin-bottom: 50px;
-        text-align: center;
-        font-size: 25px;
-        top: 12px;
-    }
-
-    .lead {
-        margin-bottom: 60px;
-        text-align: center;
-        color: white;
-    }
-}
-
-//---------Content---------
-
-.content-section-a {
-    padding: 50px 0;
-    background-color: rgba(0, 250, 250, 0.69);
-    margin-top: 0px;
-}
-
-.content-section-b {
-    background-color: rgba(0, 120, 50, 0.69);
-    padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
-}
-
-.section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 3px solid #e7e7e7;
-}
-
-.section-heading {
-    margin-bottom: 30px;
-}
-
-.lead {
-    font-size: 18px;
-    font-weight: 400;
-}
-
 
 
