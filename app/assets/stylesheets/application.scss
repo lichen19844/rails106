@@ -18,37 +18,40 @@
 @import "bootstrap";
 
 
- body {
-     background: url("https://ww3.sinaimg.cn/large/006tNc79gy1ff6zr9y4yoj31kw11v4bv.jpg")no-repeat scroll top center/cover;
-     background-attachment: fixed;
-     font-family: 'Open Sans', sans-serif;
- }
+body {
+    background: url("https://ww3.sinaimg.cn/large/006tNc79gy1ff6zr9y4yoj31kw11v4bv.jpg")no-repeat scroll top center/cover;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+}
+
 
 
 /*-------flash讯息----*/
 
 .customed-flash {
-    opacity: 0.8;
+
+
     position: fixed;
     width: 100%;
-    padding: 15px 45px 15px 20px;
-    margin: 0px 0px 0px 0px; // 会将 flash 讯息往下移。
+    padding: 15px 20px 15px 20px;
+    margin: 150px 0px 0px 0px; // 会将 flash 讯息往下移。
+    z-index: 200;   // 可以覆盖在显示比较上的图层，便于关闭，值太低可能会被图片或视频等其它元素遮住
 }
 
 .alert {
-  margin: 0;
-  border-radius: 0;
+    background: red;
+    opacity: 0.5;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
 }
 
 //---------导航------------
-
 .navbar-inverse {
-    background: linear-gradient(180deg,#212121,#0091EA);
+    background: linear-gradient(180deg, #212121, #0091EA);
     opacity: 0.69;
     border-color: #222222;
     margin-bottom: 100px;
     border-radius: 0;
     height: 60px;
 }
-
-

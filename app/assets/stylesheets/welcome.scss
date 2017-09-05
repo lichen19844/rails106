@@ -79,8 +79,8 @@
 .box3 {
     //background: image_url('DADO_Pattern_Blue.png')repeat scroll top center/ cover;
     position: relative;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin: -5px 0 0 0;
+    bottom: -5px;
 
      //---------Video start-------
     .video-background {
@@ -132,15 +132,26 @@
 }
 
 //---------元气少女---------
-.container-video {
+.box4{
+
+    position: relative;
+    margin: -5px 0 0 0;
+    bottom: -5px;
+
+	.container-video {
     background-color: rgba(0, 0, 0, 0);
     margin-top: 0px;
     padding: 0px;
 }
+}
+
 
 
 //---------video pause----------
 .box5 {
+    position: relative;
+    margin: -5px 0 0 0;
+    bottom: -5px;
     .back {
         position: absolute;
         top: 50px;
@@ -293,7 +304,7 @@
 // 以下是视频
 .home-video-hero {
     position: relative;
-    margin: 0 -15px 0 -15px;
+    margin: -5px 0 0 0;
     bottom: -5px;
 }
 

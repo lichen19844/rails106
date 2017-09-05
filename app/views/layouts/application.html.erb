@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Rails106</title>
     <%= csrf_meta_tags %>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><!-- 元气少女视频引用 -->
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <!-- 元气少女视频引用 -->
+            <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-  	<div class="">
-  		<%= render "common/navbar" %>
-
-    	<%= yield %>
+<body>
+    <div class="">
+        <%= render "common/navbar" %>
+            <div class="customed-flash">
+                <%= render "common/flashes" %>
+            </div>
+            <%= yield %>
     </div>
     <%= render "common/footer" %>
-  </body>
+</body>
+
 </html>
-
-
 <!-- rails 5.1 对 gem bootstrap好像出了点问题有些不支持js了，所以引用一下第三方地址 -->
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
