@@ -1,4 +1,4 @@
-<div class="col-md-12">
+<div class="col-md-12 col-sm-12 col-xs-12 groups">
     <div class="group">
         <%= link_to("New Group", new_group_path, class: "btn btn-primary pull-right") %>
     </div>
@@ -12,9 +12,9 @@
         </thead>
         <tbody>
             <% @groups.each do |group| %>
-                <tr class="w3-hover-green">
+                <tr class="">
                     <td>#</td>
-                    <td class="w3-hover-blue">
+                    <td class="">
                         <%= link_to(group.title, group_path(group)) %>
                     </td>
                     <td>
