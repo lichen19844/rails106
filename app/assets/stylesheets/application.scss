@@ -29,18 +29,16 @@ body {
 /*-------flash讯息----*/
 
 .customed-flash {
-
-
     position: fixed;
     width: 100%;
     padding: 15px 20px 15px 20px;
-    margin: 150px 0px 0px 0px; // 会将 flash 讯息往下移。
+    margin: 0px 0px 0px 0px; // 会将 flash 讯息往下移。
     z-index: 200;   // 可以覆盖在显示比较上的图层，便于关闭，值太低可能会被图片或视频等其它元素遮住
 }
 
 .alert {
-    background: red;
-    opacity: 0.5;
+    background: orange;
+    opacity: 0.7;
     margin: 0;
     border-radius: 0;
     border: 0;
