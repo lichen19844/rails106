@@ -38,10 +38,10 @@
 <div class="container-fluid">
     <div class="row">
         <div class="box3 ">
-            <%= video_tag "Show.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: 'video-background'%>
-                <a class="logo-mobile show" data-turbolinks="false" href="/" tabindex="-1">
-                    <div class="icn icn-mint-leaf-mobile"></div>
-                </a>
+            <video class="video-background" width="320" height="240" controls autoplay loop mute>
+  <source src="Show.mp4" type="video/mp4">
+</video>
+
                 <div class="box-inner col-sm-4 col-xs-12"><!--这里小心 原来是col-md-6 col-md-offset-3 会有不一样的效果-->
                     <h1 class="title">SXL in China</h1>
                     <p class="slogan">轻松创建美观强大的网站，无需专业技术知识与设计经验。
