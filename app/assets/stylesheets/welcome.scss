@@ -1,3 +1,400 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//---------Box---------
+.box {
+    //background: image_url('header.png')repeat scroll top center/ cover;
+    background: linear-gradient(180deg, #0091EA, #212121);
+    opacity: 0.6; //background-image: image-url("header.png");
+    //background-repeat: no-repeat;
+    //background-size: cover;
+    margin-bottom: 0px;
+    margin-top: 50px;
+
+    .box-inner {
+        background-color: rgba(250, 250, 250, 0.69);
+        padding-bottom: 5px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .title {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .slogan {
+        color: #222;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 25px;
+        top: 12px;
+    }
+
+    .lead {
+        margin-bottom: 60px;
+        text-align: center;
+        color: white;
+    }
+}
+
+//---------Box2---------
+.box2 {
+    background: image_url('DADO_Pattern_Blue.png')repeat scroll top center/ cover;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+    .box-inner {
+        background-color: rgba(250, 250, 250, 0.69);
+        padding-bottom: 5px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .title {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .slogan {
+        color: #222;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 25px;
+        top: 12px;
+    }
+
+    .lead {
+        margin-bottom: 60px;
+        text-align: center;
+        color: white;
+    }
+}
+
+
+
+//---------Box3---------
+.box3 {
+    //background: image_url('DADO_Pattern_Blue.png')repeat scroll top center/ cover;
+    position: relative;
+    margin: -5px 0 0 0;
+    bottom: -5px;
+
+     //---------Video start-------
+    .video-background {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-size: cover;
+    position: relative;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    min-height: auto;
+    z-index: -10;
+    background-size: cover;
+    } 
+    //---------Video end-------
+    .box-inner {
+    width: 670px;
+    height: auto;
+    position: absolute;
+	top: 50%;
+    left: 50%;
+    -webkit-transform: translate(+50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background: rgba(250, 0, 250, 0.3);
+    }
+
+    .title {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .slogan {
+        color: #222;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 25px;
+        top: 12px;
+    }
+
+    .lead {
+        margin-bottom: 60px;
+        text-align: center;
+        color: white;
+    }
+}
+
+//---------元气少女---------
+.box4{
+
+    position: relative;
+    margin: -5px 0 0 0;
+    bottom: -5px;
+
+	.container-video {
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 0px;
+    padding: 0px;
+}
+}
+
+
+
+//---------video pause----------
+.box5 {
+    position: relative;
+    margin: -5px 0 0 0;
+    bottom: -5px;
+    .back {
+        position: absolute;
+        top: 50px;
+        right: 80px;
+        color: #fff; //字体颜色
+        border-width: 2px;
+        border-style: solid;
+        border-color: #fff;
+        background: none;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Avenir Next LT W01 Demi;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: .2em;
+        height: 15px;
+        line-height: 1.2;
+        padding: 30px 30px;
+        text-align: center;
+        transition: .1s ease-in-out;
+        text-transform: uppercase;
+        width: 120px;
+        will-change: background-color, border-color, color;
+    }
+    .back:hover {
+        background-color: #0dc3ad;
+        border-color: #0dc3ad;
+        color: #fff;
+    }
+}
+
+
+
+//---------Content---------
+.content-section-a {
+    padding: 50px 0;
+    background-color: rgba(0, 250, 250, 0.69);
+    margin-top: 0px;
+}
+
+.content-section-b {
+    background-color: rgba(0, 120, 50, 0.69);
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+
+//-----------黄宏亮视频-----------
+.content-container {
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    padding: 50px;
+}
+
+.content-container h3 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin: 0;
+    padding: 0;
+}
+
+.form-item {
+    width: 100%;
+}
+
+.content-container input {
+    height: 40px;
+    margin: 0;
+}
+
+.my-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    letter-spacing: .3rem;
+    text-align: center;
+}
+
+.my-button:hover {
+    background-color: transparent;
+}
+
+.content {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    font-size: 1.0rem;
+    line-height: 3.5rem;
+}
+
+.sub-copy {
+    text-align: center;
+    display: block;
+}
+
+.sign-up-form {
+    position: relative;
+    max-width: 580px;
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    display: block;
+    position: relative;
+    top: 10px;
+    width: 80%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+}
+
+.log-in-link a:hover {
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+
+// 以下是视频
+.home-video-hero {
+    position: relative;
+    margin: -5px 0 0 0;
+    bottom: -5px;
+}
+
+.home-video-hero .video-frame {
+    position: relative;
+}
+
+.home-video-hero .video-frame video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-size: cover;
+    position: relative;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    min-height: auto;
+    z-index: -10;
+    background-size: cover;
+}
+
+video {}
+
+.home-video-hero .video-overlay {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; // background: rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+.home-video-hero .content-container {
+    width: 670px;
+    height: auto;
+    position: absolute;
+	top: 50%;
+    left: 50%;
+    -webkit-transform: translate(+50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.home-video-hero h1 {
+    font-size: 38px;
+    font-size: 4rem;
+    line-height: 48px;
+    line-height: 3rem;
+    text-align: center;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 10px;
+}
+
+.home-video-hero .sub-copy {
+    font-family: "webfont", Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+    text-align: center;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+.home-video-hero p {
+    font-family: "Gotham_SSm_4r", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-size: 1.5rem;
+    line-height: 1.125rem;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+.home-video-hero .sign-up-form {
+    position: relative;
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content a:hover {
+    background-color: transparent;
+}
+
+.content a {
+    // font-size: 1.7rem;
+    // font-size: 1.1rem;
+    font-size: 1.8rem;
+}
