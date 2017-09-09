@@ -9,6 +9,8 @@ class User < ApplicationRecord
 
   has_many :identifies
 
+  has_many :groups
+
   def self.from_google(access_token, signed_in_resource=nil)
   	data = access_token.info
   	identify = Identify.find_by(:provider => access_token.provider, :uid => access_token.uid)
