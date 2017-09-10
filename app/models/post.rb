@@ -1,7 +1,7 @@
-class Group < ApplicationRecord
+class Post < ApplicationRecord
 	validates :title, presence: true
 
 	belongs_to :user
-	has_many :posts
+	belongs_to :group
 
 end

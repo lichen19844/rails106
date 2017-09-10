@@ -10,6 +10,7 @@ class User < ApplicationRecord
   has_many :identifies
 
   has_many :groups
+  has_many :posts
 
   def self.from_google(access_token, signed_in_resource=nil)
   	data = access_token.info
