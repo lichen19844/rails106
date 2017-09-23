@@ -39,22 +39,22 @@
     <div class="row">
         <div class="box3 ">
             <video class="video-background" width="320" height="240" controls autoplay loop mute>
-  <source src="Show.mp4" type="video/mp4">
-</video>
-
-                <div class="box-inner col-sm-4 col-xs-12"><!--这里小心 原来是col-md-6 col-md-offset-3 会有不一样的效果-->
-                    <h1 class="title">SXL in China</h1>
-                    <p class="slogan">轻松创建美观强大的网站，无需专业技术知识与设计经验。
-                        <br> 超过 1000+ 张高清、精致图片可供选择
-                        <br> 丰富图片素材下载
-                    </p>
-                    <p class="lead">
-                        <button type="马上配置" class="btn btn-primary">
-                            <%= link_to("马上配置", '#') %>
-                        </button>
-                        <%= link_to '立即寻找', '#', class: 'btn btn-danger btn-lg' %>
-                    </p>
-                </div>
+                <source src="Show.mp4" type="video/mp4">
+            </video>
+            <div class="box-inner col-sm-4 col-xs-12">
+                <!--这里小心 原来是col-md-6 col-md-offset-3 会有不一样的效果-->
+                <h1 class="title">SXL in China</h1>
+                <p class="slogan">轻松创建美观强大的网站，无需专业技术知识与设计经验。
+                    <br> 超过 1000+ 张高清、精致图片可供选择
+                    <br> 丰富图片素材下载
+                </p>
+                <p class="lead">
+                    <button type="马上配置" class="btn btn-primary">
+                        <%= link_to("马上配置", '#') %>
+                    </button>
+                    <%= link_to '立即寻找', '#', class: 'btn btn-danger btn-lg' %>
+                </p>
+            </div>
         </div>
     </div>
 </div>
@@ -79,31 +79,6 @@
         </div>
     </div>
 </div>
-<!-- 黄宏亮视频 -->
-<section class="home-video-hero">
-    <div class="video-frame" data-video="/evernote.com/video/homepage/homepage-hero-video" data-image="/evernote.com/img/homepage/homepage-hero-video-desktop-still.jpg" data-mobile="/evernote.com/img/homepage/homepage-hero-video-mobile-still.jpg">
-        <div class="video-overlay"></div>
-        <video autoplay="autoplay" loop="loop" poster="https://cdn1.evernote.com/evernote.com/img/homepage/homepage-hero-video-desktop-still@2x.jpg">
-            <source class="webm" type="video/webm" src="https://cdn1.evernote.com/evernote.com/video/homepage/homepage-hero-video@2x.webm">
-            <source class="mp4" type="video/mp4" src="https://cdn1.evernote.com/evernote.com/video/homepage/homepage-hero-video@2x.mp4">
-        </video>
-        <div class="content-container col-sm-4 col-xs-12">
-            <div class="content">
-                <h1>轻松找到全栈好工作</h1>
-                <div class="line"></div>
-                <br>
-                <h3 class="sub-cop">工作无处不在。在这里，帮你连接整个职缺市场，放心学习，轻松找Rails全栈工作。</h3>
-                <div class="col-xs-3 col-xs-offset-4">
-                    <%= link_to("立即发简历", "#", class: "btn btn-lg btn-success") %>
-                </div>
-                <div class="col-xs-3 col-xs-offset-1">
-                    <%= link_to("立即发职位", "#", class: "btn btn-lg btn-success") %>
-                </div>
-            </div>
-            <img src="https://cdn1.evernote.com/evernote.com/img/homepage/homepage-hero-video-desktop-still@2x.jpg" class="mobile-fallback" alt="" style="display: none;">
-        </div>
-    </div>
-</section>
 <!-- enabled pause video 3 box5 -->
 <div class="container-fluid">
     <div class="row">
@@ -117,9 +92,38 @@
         </div>
     </div>
 </div>
+<!-- 黄宏亮视频 -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="home-video-hero box6">
+            <div class="video-frame" data-video="/evernote.com/video/homepage/homepage-hero-video" data-image="/evernote.com/img/homepage/homepage-hero-video-desktop-still.jpg" data-mobile="/evernote.com/img/homepage/homepage-hero-video-mobile-still.jpg">
+                <div class="video-overlay"></div>
+                <video autoplay="autoplay" loop="loop" poster="https://cdn1.evernote.com/evernote.com/img/homepage/homepage-hero-video-desktop-still@2x.jpg">
+                    <source class="webm" type="video/webm" src="https://cdn1.evernote.com/evernote.com/video/homepage/homepage-hero-video@2x.webm">
+                    <source class="mp4" type="video/mp4" src="https://cdn1.evernote.com/evernote.com/video/homepage/homepage-hero-video@2x.mp4">
+                </video>
+                <div class="content-container col-sm-4 col-xs-12">
+                    <div class="content">
+                        <h2>轻松找到全栈好工作</h2>
+                        <div class="line"></div>
+                        <br>
+                        <h3 class="sub-cop">工作无处不在。在这里，帮你连接整个职缺市场，放心学习，轻松找Rails全栈工作。</h3>
+                        <div class="col-xs-3 col-xs-offset-4">
+                            <%= link_to("立即发简历", "#", class: "btn btn-lg btn-success") %>
+                        </div>
+                        <div class="col-xs-3 col-xs-offset-1">
+                            <%= link_to("立即发职位", "#", class: "btn btn-lg btn-success") %>
+                        </div>
+                    </div>
+                    <img src="https://cdn1.evernote.com/evernote.com/img/homepage/homepage-hero-video-desktop-still@2x.jpg" class="mobile-fallback" alt="" style="display: none;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Content 图文内容 -->
 <div class="content-section-a">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-5 col-sm-6">
                 <hr class="section-heading-spacer">
@@ -135,7 +139,7 @@
     </div>
 </div>
 <div class="content-section-b">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                 <hr class="section-heading-spacer">
@@ -151,7 +155,7 @@
     </div>
 </div>
 <div class="content-section-a">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-5 col-sm-6">
                 <hr class="section-heading-spacer">
@@ -166,111 +170,137 @@
     </div>
 </div>
 <!-- Carousel 轮播图 -->
-<div class="container">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <%= image_tag 'la.png', class: 'img-responsive' %>
-                    <div class="carousel-caption">
-                        <h3>Flowers</h3>
-                        <p>Beautiful flowers in Kolymbari, Crete.</p>
+<div class="carousel_image">
+    <div class="container">
+        <div class="row">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <%= image_tag 'la.png', class: 'img-responsive' %>
+                            <div class="carousel-caption">
+                                <h3>Flowers</h3>
+                                <p>Beautiful flowers in Kolymbari, Crete.</p>
+                            </div>
                     </div>
-            </div>
-            <div class="item">
-                <%= image_tag 'chicago.png', class: 'img-responsive' %>
-                    <div class="carousel-caption">
-                        <h3>Flowers</h3>
-                        <p>Beautiful flowers in Kolymbari, Crete.</p>
+                    <div class="item">
+                        <%= image_tag 'chicago.png', class: 'img-responsive' %>
+                            <div class="carousel-caption">
+                                <h3>Flowers</h3>
+                                <p>Beautiful flowers in Kolymbari, Crete.</p>
+                            </div>
                     </div>
-            </div>
-            <div class="item">
-                <%= image_tag 'ny.png', class: 'img-responsive'%>
-                    <div class="carousel-caption">
-                        <h3>Flowers</h3>
-                        <p>Beautiful flowers in Kolymbari, Crete.</p>
+                    <div class="item">
+                        <%= image_tag 'ny.png', class: 'img-responsive'%>
+                            <div class="carousel-caption">
+                                <h3>Flowers</h3>
+                                <p>Beautiful flowers in Kolymbari, Crete.</p>
+                            </div>
                     </div>
-            </div>
-        </div>
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
     <span class="sr-only">Previous</span>
   </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
     <span class="sr-only">Next</span>
   </a>
-    </div>
-</div>
-<!-- test collapse 钩子 -->
-<div>
-    <h1>Hello World !Hello World !Hello World !Hello World !</h1>
-    <h1>Hello World !Hello World !Hello World !Hello World !</h1>
-    <h1>Hello World !Hello World !Hello World !Hello World !</h1>
-    <h1>Hello World !Hello World !Hello World !Hello World !</h1>
-    <h1>Hello World !Hello World !Hello World !Hello World !</h1>
-    <p>
-        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        Link with href
-      </a>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Button with data-target
-        </button>
-    </p>
-    <div class="collapse" id="collapseExample">
-        <div class="card card-block">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
         </div>
     </div>
-    <div id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="card">
-            <div class="card-header" role="tab" id="headingOne">
-                <h5 class="mb-0">
+</div>
+<!-- test collapse 钩子示例 -->
+<div class="welcome_content">
+    <div class="container-fluid">
+        <div class="row">
+            <h1>Hello World !Hello World !Hello World !Hello World !</h1>
+            <h1>Hello World !Hello World !Hello World !Hello World !</h1>
+            <h1>Hello World !Hello World !Hello World !Hello World !</h1>
+            <h1>Hello World !Hello World !Hello World !Hello World !</h1>
+            <h1>Hello World !Hello World !Hello World !Hello World !</h1>
+            <p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Link with href
+      </a>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Button with data-target
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-block">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div>
+            </div>
+            <div id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne">
+                        <h5 class="mb-0">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               Collapsible Group Item #1
             </a>
           </h5>
-            </div>
-            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-                <div class="card-block">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                    </div>
+                    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" role="tab" id="headingTwo">
-                <h5 class="mb-0">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo">
+                        <h5 class="mb-0">
             <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               Collapsible Group Item #2
             </a>
           </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="card-block">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                    </div>
+                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="card-block">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" role="tab" id="headingThree">
-                <h5 class="mb-0">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree">
+                        <h5 class="mb-0">
             <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               Collapsible Group Item #3
             </a>
           </h5>
-            </div>
-            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-                <div class="card-block">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                    </div>
+                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="card-block">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div class="show500" id="errors">
+    <div class="container-fluid">
+        <div class="row">
+            <canvas id="error" width="1326" height="689"></canvas>
+            <div class="l-container-center l-container--tiny text-page">
+                <div class="l-lg-12">
+                    <h1 class="error__title">500</h1>
+                    <h2 class="error__subtitle">Ouch, something went wrong!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="backtop">
+ <span class="fa fa-chevron-up"></span>
+</div>
+<script src="assets/canvas.js"></script>
