@@ -389,3 +389,35 @@
         }
     }
 }
+
+//----------backtop----------
+.backtop {
+  width: 55px;
+  height: 55px;
+  top: 65%;
+  right: 45px;
+  // margin-right: 30px;
+  // margin-bottom: 30px;
+  background-color: #BDBDBD;
+  border-radius: 27.5px;
+  // text-align: center;
+  position: fixed;
+  // bottom: 0px;
+  opacity: 0.8;
+
+  span {
+  color: #000;
+  font-size: 20px;
+        position: absolute;
+  top: 16px;
+  left: 19px;
+}
+
+  &:hover {
+      background-color: #f0f0f0;
+
+      span{
+        color: #eb5424;
+      }
+  }
+}
