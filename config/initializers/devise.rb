@@ -38,6 +38,10 @@ Devise.setup do |config|
   require 'omniauth-github'
   config.omniauth :github, ENV["GITHUB_CLIENT_ID"], ENV["GITHUB_CLIENT_SECRET"], scope: "user:email"
 
+  #wechat is unable
+  config.omniauth :wechat, ENV["WECHAT_APP_ID"], ENV["WECHAT_APP_SECRET"], :authorize_params => {:scope => "snsapi_base"}
+  # config.omniauth :wechat, Rails.application.config.open_weixin_app_id, Rails.application.config.open_weixin_app_screct, :authorize_params => {:scope => "snsapi_userinfo"}
+  
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
   # just :email. You can configure it to use [:username, :subdomain], so for

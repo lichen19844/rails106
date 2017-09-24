@@ -41,6 +41,8 @@ gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
 gem 'omniauth-github'
+#wechat is unable
+gem "omniauth-wechat-oauth2"
 gem 'figaro'
 gem 'rails-erd'
 
