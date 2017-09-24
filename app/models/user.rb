@@ -15,6 +15,8 @@ class User < ApplicationRecord
   has_many :participated_groups, :through => :group_relationships, :source => :group
 
 
+
+  #第三方登录omniauth2
   def self.from_google(access_token, signed_in_resource=nil)
   	data = access_token.info
   	identify = Identify.find_by(:provider => access_token.provider, :uid => access_token.uid)
