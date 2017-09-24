@@ -41,8 +41,11 @@ gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
 gem 'omniauth-github'
+#wechat is unable
+gem "omniauth-wechat-oauth2"
 gem 'figaro'
 gem 'rails-erd'
+gem 'will_paginate'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
