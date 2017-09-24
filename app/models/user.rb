@@ -18,6 +18,14 @@ class User < ApplicationRecord
     participated_groups.include?(group)
   end
 
+  def join!(group)
+    participated_groups << group
+  end
+
+  def quit!(group)
+    participated_groups.delete(group)
+  end
+
   #第三方登录omniauth2
   def self.from_google(access_token, signed_in_resource=nil)
   	data = access_token.info
