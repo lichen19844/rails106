@@ -32,6 +32,14 @@
                 <% end %>
         </tbody>
     </table>
+    
+    <!-- will_paginate css, post and group are compatible -->
+    <div class="flickr_pagination">
+        <div class="page_info">
+          <%= page_entries_info @posts %>
+        </div>
+        <%= will_paginate @posts, :container => false %>
+    </div>    
 </div>
 
 <!-- music start 目前发现只能放在html里，不能移到js文件里-->
