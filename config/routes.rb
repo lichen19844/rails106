@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   # root 'groups#index'
   get 'welcome' => 'welcome#index'
   resources :groups do
+  	member do
+  		post :join
+  		post :quit
+  	end
   	resources :posts
   end
   
