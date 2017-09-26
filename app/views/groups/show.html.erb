@@ -1,4 +1,4 @@
-<div class="col-md-12">
+<div class="col-md-12 groups">
 	<div class="group">
 	
 		<span class="pull-right">
@@ -18,7 +18,7 @@
 		<% end %>
 	</div>
 	<h2><%= @group.title %></h2>
-	<p><%= @group.description %></p>
+	<p><%= render_group_description(@group) %></p>
 
 	<table class="table">
 		<thead>
@@ -32,7 +32,7 @@
 		<tbody>
 			<% @posts.each do |post| %>
 				<tr>
-					<td><%= post.content %></td>
+					<td><%= link_to(post.content, group_post_path(post.group, post)) %></td>
 					<td><%= post.user.username %></td>
 					<td><%= post.created_at %></td>
 				</tr>

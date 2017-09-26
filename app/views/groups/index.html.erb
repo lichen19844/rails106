@@ -12,24 +12,7 @@
             </tr>
         </thead>
         <tbody>
-            <% @groups.each do |group| %>
-                <tr class="w3-hover-green">
-                    <td>#</td>
-                    <td class="w3-hover-blue">
-                        <%= link_to(group.title, group_path(group)) %>
-                    </td>
-                    <td>
-                        <%= group.description %>
-                    </td>
-                    <td><%= group.user.email %></td>
-                    <td>
-                        <% if current_user && current_user == group.user %>
-                            <%= link_to("Edit", edit_group_path(group), class: "btn btn-sm btn-default") %>
-                                <%= link_to("Delete", group_path(group), method: :delete, class: "btn btn-sm btn-default", data: {confirm: "Are you sure ?"}) %>
-                        <% end %>
-                    </td>
-                </tr>
-                <% end %>
+            <%= render :partial => "group_item", :collection => @groups, :as => :group %>
         </tbody>
     </table>
     
@@ -49,13 +32,13 @@
     <source src="Eutopia.mp3" type="audio/mpeg">
 </audio>
 <script type="text/javascript">
-let playMusic = true;
-document.getElementById("btn-music").addEventListener("click", function() {
-    playMusic = !playMusic;
-    document.getElementById("btn-music").classList.toggle('music-off');
-    playMusic ? document.querySelector('.music').play() : document.querySelector('.music').pause();
-});
-worldMusic.volume = 0.8; //预设音量，貌似无效啊。。。
+    let playMusic = true;
+    document.getElementById("btn-music").addEventListener("click", function() {
+        playMusic = !playMusic;
+        document.getElementById("btn-music").classList.toggle('music-off');
+        playMusic ? document.querySelector('.music').play() : document.querySelector('.music').pause();
+    });
+    worldMusic.volume = 0.8; //预设音量，貌似无效啊。。。
 </script>
 
 <!-- music end -->
