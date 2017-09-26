@@ -18,7 +18,7 @@
                     <td class="w3-hover-blue">
                         <%= link_to(group.title, group_path(group)) %>
                     </td>
-                    <td><%= simple_format(group.description) %></td>
+                    <td><%= link_to(simple_format(group.description), group_path(group)) %></td>
                     <td><%= group.user.email %></td>
                     <td>
                         <% if current_user && current_user == group.user %>
@@ -47,13 +47,13 @@
     <source src="Eutopia.mp3" type="audio/mpeg">
 </audio>
 <script type="text/javascript">
-let playMusic = true;
-document.getElementById("btn-music").addEventListener("click", function() {
-    playMusic = !playMusic;
-    document.getElementById("btn-music").classList.toggle('music-off');
-    playMusic ? document.querySelector('.music').play() : document.querySelector('.music').pause();
-});
-worldMusic.volume = 0.8; //预设音量，貌似无效啊。。。
+    let playMusic = true;
+    document.getElementById("btn-music").addEventListener("click", function() {
+        playMusic = !playMusic;
+        document.getElementById("btn-music").classList.toggle('music-off');
+        playMusic ? document.querySelector('.music').play() : document.querySelector('.music').pause();
+    });
+    worldMusic.volume = 0.8; //预设音量，貌似无效啊。。。
 </script>
 
 <!-- music end -->
