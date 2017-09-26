@@ -18,7 +18,7 @@
                     <td class="w3-hover-blue">
                         <%= link_to(group.title, group_path(group)) %>
                     </td>
-                    <td><%= link_to(simple_format(group.description), group_path(group)) %></td>
+                    <td><%= link_to(render_group_description(group), group_path(group)) %></td>
                     <td><%= group.user.email %></td>
                     <td>
                         <% if current_user && current_user == group.user %>
