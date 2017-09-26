@@ -32,7 +32,7 @@
 		<tbody>
 			<% @posts.each do |post| %>
 				<tr>
-					<td><%= link_to(post.content, group_post_path(post.group, post)) %></td>
+					<td><%= link_to(simple_format(post.content), group_post_path(post.group, post)) %></td>
 					<td><%= post.user.username %></td>
 					<td><%= post.created_at %></td>
 				</tr>

@@ -1,6 +1,6 @@
 <div class="text-center col-md-12 groups">
 
 	<h2><%= @post.group.title %></h2>
-	<p><%= @post.content %></p>
+	<p><%= simple_format(@post.content) %></p>
 
 </div>
