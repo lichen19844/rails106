@@ -14,7 +14,95 @@
  *= require_self
  */
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    //background: url("https://ww3.sinaimg.cn/large/006tNc79gy1ff6zr9y4yoj31kw11v4bv.jpg")no-repeat scroll top center/cover;
+ 
+    background: image_url('wall.jpeg')repeat scroll top center/ cover;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+}
 
 
- @import "bootstrap-sprockets";
- @import "bootstrap";
+
+/*-------flash讯息----*/
+
+.customed-flash {
+
+    position: fixed;
+    width: 100%;
+    padding: 15px 20px 15px 20px;
+    margin: 90px 0px 0px 0px; // 会将 flash 讯息往下移。
+    z-index: 4;   // 可以覆盖在显示比较上的图层，便于关闭，值太低可能会被图片或视频等其它元素遮住
+}
+
+.alert {
+
+    background: orange;
+    opacity: 0.7;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+}
+
+//---------导航------------
+.navbar-inverse {
+    
+    background: linear-gradient(180deg, #212121, #0091EA);
+    opacity: 0.69;
+    border-color: #222222;
+    margin-bottom: 0px;
+    border-radius: 0;
+    height: 50px;
+    border: 0;
+}
+
+.navbar-inverse .navbar-brand {
+    color: gold;
+    &:hover {
+    color: #fff;
+    }
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+
+    background-color: rgba(236, 47, 47, 0.69);
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #258754;
+    color: gold;
+    &:hover {
+    color: #fff;
+    }
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: gold;
+    &:hover {
+    color: #fff;
+    }
+}
+
+
+
+//----------footer------------
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 100px;   //和正文容器的margin-bottom的参数一致，遥相呼应
+    width: 100%;    //这个貌似不必写
+    background: linear-gradient(135deg, #258754, #ea2727);
+    opacity: 0.7;
+    color: #000000;
+}

@@ -1,0 +1,44 @@
+<div class="col-md-12 col-sm-12 col-xs-12 groups">
+    <div class="group">
+        <%= link_to("New Group", new_group_path, class: "btn btn-success pull-right") %>
+    </div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <td>#</td>
+                <td>Title</td>
+                <td>Description</td>
+                <td>Creator</td>
+            </tr>
+        </thead>
+        <tbody>
+            <%= render :partial => "group_item", :collection => @groups, :as => :group %>
+        </tbody>
+    </table>
+    
+    <!-- will_paginate css, post and group are compatible -->
+    <div class="flickr_pagination">
+        <div class="page_info">
+          <%= page_entries_info @groups %>
+        </div>
+        <%= will_paginate @groups, :container => false %>
+    </div>    
+</div>
+
+<!-- music start 目前发现只能放在html里，不能移到js文件里-->
+
+<a id="btn-music" class="btn-music"></a>
+<audio class="music" autoplay controls mute loop hidden>
+    <source src="Eutopia.mp3" type="audio/mpeg">
+</audio>
+<script type="text/javascript">
+    let playMusic = true;
+    document.getElementById("btn-music").addEventListener("click", function() {
+        playMusic = !playMusic;
+        document.getElementById("btn-music").classList.toggle('music-off');
+        playMusic ? document.querySelector('.music').play() : document.querySelector('.music').pause();
+    });
+    worldMusic.volume = 0.8; //预设音量，貌似无效啊。。。
+</script>
+
+<!-- music end -->
