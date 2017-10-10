@@ -46,12 +46,16 @@ gem "omniauth-wechat-oauth2"
 gem 'figaro'
 gem 'rails-erd'
 gem 'will_paginate'
+gem 'mysql2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+
+  gem 'capistrano-rails'
+  gem 'capistrano-passenger'
 end
 
 group :development do
