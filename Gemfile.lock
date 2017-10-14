@@ -269,6 +269,7 @@ DEPENDENCIES
   rails (~> 5.0.3)
   rails-erd
   sass-rails (~> 5.0)
+  sidekiq
   simple_form
   sqlite3
   tzinfo-data

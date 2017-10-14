@@ -9,6 +9,9 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+  #sidekiq异步
+  config.active_job.queue_adapter = :sidekiq
+
   # Show full error reports.
   config.consider_all_requests_local = true
 
